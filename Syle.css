@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+* {
+    user-select: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #648599
+}
+
+header p {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+body {
+margin-block-start: 0;
+margin-block-end: 0;
+margin-inline-end: 0;
+margin-inline-start: 0;
+}
+
+.nav__container,main,footer,video {
+    grid-column: 1/8;
+}
+
+.nav__container {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    z-index: 10;
+}
+
+
+.nav {
+    grid-column: 2/5;
+    display: inline;
+    display: flex;
+}
+
+.nav li {
+    justify-content: center;
+    color: #648599;
+    display: inline;
+    margin: 40px;
+    font-size: 15px;
+    transition: color, .5s;
+}
+
+.nav__container i {
+    display: none;
+}
+
+.nav li:hover {
+    color: black;
+    font-size: 17px;
+}
+
+.main {
+    background-image: url(forest.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+.section-1 {
+    box-sizing: border-box;
+    grid-column: 1/4;
+    padding: 150px;
+    animation-name: Moverse;
+    animation-duration: 5s;
+    position: relative;
+}
+
+.section-2 {
+    box-sizing: border-box;
+    grid-column: 4/8;
+    padding: 150px;
+    animation-name: Moverse;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes Moverse {
+    0% {
+        top: 30%;
+    }
+
+    50% {
+        top: 25%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+h3,h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.section-1 p {
+    transform: translateY(10px);
+}
+
+.video {
+    grid-column: 1/8;
+}
+
+.info-img {
+    grid-column: 1/5;
+    background-color: gainsboro;
+}
+
+.info-img img {
+    background-image: url(arbolsito.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    padding: 80px;
+    text-align: center;
+    grid-column: 5/8;
+    background-color: white;
+}
+
+h4 {
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.subscription {
+    grid-column: 1/4;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.social {
+    grid-column: 4/9;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #648599;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #648599;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  margin-top: 20px;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #648599;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.subscription p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact {
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.boton {
+    background-color: #648599;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateY(-20px);
+    transition: color, .3s;
+}
+
+.boton:hover {
+    background-color: #4e6777;
+}
+
+.social i {
+    font-size: 40px;
+    margin: 20px;
+    transition: color, .3s;
+}
+
+.social i:hover {
+    color: #415663
+}
+
+.social p {
+    font-size: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .nav__container,nav {
+        display: none;
+    }
+
+    .section-1,.section-2,.main,.info,.subscription,.social {
+        grid-column: 1/8;
+    }
+
+    .section-1,.section-2 {
+        padding: 60px;
+    }
+
+    h1 { 
+       font-size: 27px; 
+    }
+
+    .info-img {
+        grid-column: 1/8;
+        width: 100vw;
+        box-sizing: border-box;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    input {
+        margin: 30px;
+    }
+
+    .contact {
+        height: 30px;
+        width: 200px;
+    }
+}
