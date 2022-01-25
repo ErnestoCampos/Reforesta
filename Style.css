@@ -266,47 +266,24 @@ footer p {
 
 
 @media screen and (max-width: 800px) {
-    .section-1,.section-2,.info-img,.info,.subscription,.social {
-        grid-column: 1/8;
-        width: 100vw;
-    }
-
-    .section-1,.section-2 {
-        padding: 30px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav li {
+    .nav__container,nav {
         display: none;
     }
 
-    .subscription {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        margin: auto;
+    .section-1,.section-2,.main,.info-img,.info,.subscription,.social {
+        grid-column: 1/8;
     }
 
-    .info-img{
-        width: 100%;
-        box-sizing: border-box;
+    .section-1,.section-2 {
+        padding: 50px;
     }
 
-    .social {
-        margin: auto;
-    }
-
-    .social i{
-        margin: auto;
-        letter-spacing: 2px;
+    input {
+        margin-top: 30px;
     }
 
     .contact {
-        margin-bottom: 40px;
-    }
-
-    .subscription p {
-        margin-bottom: 50px;
+        height: 30px;
+        width: 200px;
     }
 }
