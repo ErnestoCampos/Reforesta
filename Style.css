@@ -300,4 +300,17 @@ footer p {
         height: 30px;
         width: 200px;
     }
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    i {
+        font-size: 5px;
+    }
+
+    footer p {
+        font-size: 7px;
+    }
 }
